@@ -13,3 +13,6 @@ Lib/CMakeFiles/Ising.dir/monteCarlo.cpp.o: /home/wenqingxie/Ising-Wolff/Code/Lib
 Lib/CMakeFiles/Ising.dir/monteCarlo.cpp.o: /home/wenqingxie/Ising-Wolff/Code/Lib/monteCarlo.cpp
 Lib/CMakeFiles/Ising.dir/monteCarlo.cpp.o: /home/wenqingxie/Ising-Wolff/Code/Lib/monteCarlo.h
 
+Lib/CMakeFiles/Ising.dir/util.cpp.o: /home/wenqingxie/Ising-Wolff/Code/Lib/util.cpp
+Lib/CMakeFiles/Ising.dir/util.cpp.o: /home/wenqingxie/Ising-Wolff/Code/Lib/util.h
+

@@ -24,6 +24,10 @@ map
 random
 -
 
+/home/wenqingxie/Ising-Wolff/Code/Lib/util.h
+vector
+-
+
 /home/wenqingxie/Ising-Wolff/Code/main.cpp
 iostream
 -
@@ -41,4 +45,6 @@ monteCarlo.h
 /home/wenqingxie/Ising-Wolff/Code/monteCarlo.h
 isingState.h
 /home/wenqingxie/Ising-Wolff/Code/isingState.h
+util.h
+/home/wenqingxie/Ising-Wolff/Code/util.h
 

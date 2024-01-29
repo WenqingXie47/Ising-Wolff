@@ -45,6 +45,7 @@
         "cinttypes": "cpp",
         "typeinfo": "cpp",
         "bit": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "cstring": "cpp"
     }
 }

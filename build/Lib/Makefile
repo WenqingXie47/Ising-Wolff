@@ -206,6 +206,33 @@ monteCarlo.cpp.s:
 	cd /home/wenqingxie/Ising-Wolff/build && $(MAKE) -f Lib/CMakeFiles/Ising.dir/build.make Lib/CMakeFiles/Ising.dir/monteCarlo.cpp.s
 .PHONY : monteCarlo.cpp.s
 
+util.o: util.cpp.o
+
+.PHONY : util.o
+
+# target to build an object file
+util.cpp.o:
+	cd /home/wenqingxie/Ising-Wolff/build && $(MAKE) -f Lib/CMakeFiles/Ising.dir/build.make Lib/CMakeFiles/Ising.dir/util.cpp.o
+.PHONY : util.cpp.o
+
+util.i: util.cpp.i
+
+.PHONY : util.i
+
+# target to preprocess a source file
+util.cpp.i:
+	cd /home/wenqingxie/Ising-Wolff/build && $(MAKE) -f Lib/CMakeFiles/Ising.dir/build.make Lib/CMakeFiles/Ising.dir/util.cpp.i
+.PHONY : util.cpp.i
+
+util.s: util.cpp.s
+
+.PHONY : util.s
+
+# target to generate assembly for a file
+util.cpp.s:
+	cd /home/wenqingxie/Ising-Wolff/build && $(MAKE) -f Lib/CMakeFiles/Ising.dir/build.make Lib/CMakeFiles/Ising.dir/util.cpp.s
+.PHONY : util.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -224,6 +251,9 @@ help:
 	@echo "... monteCarlo.o"
 	@echo "... monteCarlo.i"
 	@echo "... monteCarlo.s"
+	@echo "... util.o"
+	@echo "... util.i"
+	@echo "... util.s"
 .PHONY : help
 
 

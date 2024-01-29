@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Ising.dir/gridState.cpp.o"
   "CMakeFiles/Ising.dir/isingState.cpp.o"
   "CMakeFiles/Ising.dir/monteCarlo.cpp.o"
+  "CMakeFiles/Ising.dir/util.cpp.o"
   "libIsing.a"
   "libIsing.pdb"
 )
