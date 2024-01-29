@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wenqingxie/Ising-Wolff/Code/Lib/gridState.h
+vector
+-
+
+/home/wenqingxie/Ising-Wolff/Code/Lib/isingState.h
+vector
+-
+gridState.h
+/home/wenqingxie/Ising-Wolff/Code/Lib/gridState.h
+
+/home/wenqingxie/Ising-Wolff/Code/Lib/monteCarlo.cpp
+monteCarlo.h
+/home/wenqingxie/Ising-Wolff/Code/Lib/monteCarlo.h
+string
+-
+cmath
+-
+
+/home/wenqingxie/Ising-Wolff/Code/Lib/monteCarlo.h
+isingState.h
+/home/wenqingxie/Ising-Wolff/Code/Lib/isingState.h
+map
+-
+random
+-
+
