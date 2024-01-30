@@ -41,6 +41,8 @@ string
 -
 cmath
 -
+algorithm
+-
 monteCarlo.h
 /home/wenqingxie/Ising-Wolff/Code/monteCarlo.h
 isingState.h

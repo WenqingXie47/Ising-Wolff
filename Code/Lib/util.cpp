@@ -23,15 +23,20 @@ namespace ising{
         return sum/list.size();
     }
 
-    double variance(std::vector<double> list)
+    double mean_squared(std::vector<double> list)
     {
         double sum = 0;
         for (double n : list){
             sum += n*n;
         }
-        sum /= list.size();
+        return sum/list.size();
+    }
+
+    double variance(std::vector<double> list)
+    {
+        double m_squared = mean_squared(list);
         double m = mean(list);
-        return sum - m*m;
+        return m_squared - m*m;
     }
 
 
