@@ -1,2 +1,2 @@
-/usr/bin/ar qc libIsing.a  CMakeFiles/Ising.dir/util.cpp.o CMakeFiles/Ising.dir/gridState.cpp.o CMakeFiles/Ising.dir/isingState.cpp.o CMakeFiles/Ising.dir/monteCarlo.cpp.o
+/usr/bin/ar qc libIsing.a CMakeFiles/Ising.dir/util.cpp.o CMakeFiles/Ising.dir/gridState.cpp.o CMakeFiles/Ising.dir/isingModel.cpp.o CMakeFiles/Ising.dir/monteCarlo.cpp.o
 /usr/bin/ranlib libIsing.a

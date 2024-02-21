@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/main.dir/main.cpp.o  -o main  Lib/libIsing.a 
+/usr/bin/c++ CMakeFiles/main.dir/main.cpp.o -o main  Lib/libIsing.a 

@@ -7,18 +7,18 @@
 #include <algorithm>
 
 #include "monteCarlo.h"
-#include "isingState.h"
+#include "isingModel.h"
 #include "util.h"
 
 int dim=2;
 int length = 16;
 double beta=0.5;
-double h=0;
-double J=1;
+double h=0.0;
+double J=1.0;
 
 int n_samples=5000;
-int n_iters_per_sample=200;
-int n_thermalization_iters=100000;
+int n_iters_per_sample=500;
+int n_thermalization_iters=1000000;
 
 
 
@@ -62,16 +62,18 @@ std::map<std::string, std::vector<double>> measure(std::vector<double>& beta_lis
     std::vector<double> m2_list{};
     std::vector<double> heat_capacity_list{};
 
+    ising::GridState grid{dim,length};
+
     for (double beta : beta_list){
-        ising::IsingState ising_state{dim, length, beta, h, J};
-        ising::IsingWolff ising_mc(ising_state);
+        ising::IsingModel ising_model{grid, beta, J, h};
+        ising::IsingWolff ising_mc(ising_model);
         auto history = ising_mc.sample(n_samples, n_iters_per_sample, n_thermalization_iters);
 
          
-        energy_list.push_back(ising::mean(history["energy"])/ising_state.n_sites);
+        energy_list.push_back(ising::mean(history["energy"])/ising_model.grid.n_sites);
         magnetization_list.push_back(ising::mean_abs(history["magnetization"]));
         m2_list.push_back(ising::mean_squared(history["magnetization"]));
-        heat_capacity_list.push_back(ising::variance(history["energy"])*beta*beta/ising_state.n_sites);
+        heat_capacity_list.push_back(ising::variance(history["energy"])*beta*beta/ising_model.grid.n_sites);
     }
     std::map<std::string, std::vector<double>> measurement {
         {"beta", beta_list}, 

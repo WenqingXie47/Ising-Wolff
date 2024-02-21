@@ -4,14 +4,14 @@ set(LIB_NAME Ising)
 set(LIB_SRCS
     util.cpp
     gridState.cpp 
-    isingState.cpp 
+    isingModel.cpp 
     monteCarlo.cpp
 )
 
 set(LIB_HDRS
     util.h
     gridState.h
-    isingState.h 
+    isingModel.h 
     monteCarlo.h
 )
 
